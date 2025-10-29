@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xl: 1272px;
+  --font-title: "Merriweather", serif;
+  --font-body: "Inter", sans-serif;
+  --font-button: "Montserrat", sans-serif;
+}
