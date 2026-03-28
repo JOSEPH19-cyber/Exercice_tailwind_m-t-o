@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> 
   </head> 
   
-  <body class="bg-gray-900 flex flex-col w-full xl:flex-row xl:h-screen xl:gap-[2rem]"> 
-    <aside class="bg-gray-700 flex flex-row justify-between my-5 mx-2 p-2 rounded-2xl xl:flex-col xl:justify-start xl:gap-8 xl:w-[7%] xl:m-7 xl:p-[1.2rem]"> 
+  <body class="bg-gray-900 flex flex-col w-full lg:flex-row lg:h-screen lg:gap-[2rem]         md:flex-row md:h-screen md:gap-[2rem]"> 
+    <aside class="bg-gray-700 flex flex-row justify-between my-5 mx-2 p-2 rounded-2xl lg:flex-col lg:justify-start lg:gap-8 lg:w-[9%] lg:m-7 lg:p-[1.2rem]       md:flex-col md:justify-start md:gap-8 md:w-[12%] md:m-7 md:p-[1.2rem]"> 
       <div> 
-        <img src="./image/wind.jpg" alt="wind" class="w-[3rem] h-[3rem]  rounded-[20%] xl:w-[2rem] xl:h-[2rem]"> 
+        <img src="./image/wind.jpg" alt="wind" class="w-[3rem] h-[3rem]  rounded-[20%] lg:w-[2rem] lg:h-[2rem]    md:w-[2rem] md:h-[2rem]"> 
       </div> 
-      <div class="font-body flex flex-row gap-6 xl:flex-col xl:gap-2"> 
+      <div class="font-body flex flex-row gap-6 sm:gap-16 lg:flex-col lg:gap-2   md:flex-col md:gap-2"> 
         <div class="text-[1rem]"> 
           <i class="fa-solid fa-cloud-sun text-white"></i> 
           <p class="text-white">Weather</p> 
@@ -33,12 +33,12 @@
     </aside> 
     
     <!--Main--> 
-    <main class="flex flex-col gap-8 xl:flex-row xl:w-[85%] xl:gap-0"> 
-      <section class="flex flex-col gap-8 xl:gap-5 xl:w-[60%] xl:h-full">
-        <input type="text" placeholder="search for cities" class="bg-gray-700 text-slate-100 rounded-2xl w-[80%] h-10 mx-[10%] pl-2 xl:mt-7 xl:rounded-lg xl:h-[8%] xl:mx-0 xl:w-full">
-        <div class="flex flex-row justify-between mx-4 xl:h-[25%] xl:p-1"> 
+    <main class="flex flex-col gap-8 lg:flex-row lg:w-[85%] lg:gap-0    md:flex-row md:w-[85%] md:gap-0"> 
+      <section class="flex flex-col gap-8 lg:gap-5 lg:w-[60%] lg:h-full    md:gap-5 md:w-[60%] md:h-full">
+        <input type="text" id="recherche" placeholder="search for cities" class="bg-gray-700 text-slate-100 rounded-2xl w-[80%] h-10 mx-[10%] pl-2 lg:mt-7 lg:rounded-lg lg:h-[8%] lg:mx-0 lg:w-full    md:mt-7 md:rounded-lg md:h-[8%] md:mx-0 md:w-full">
+        <div class="flex flex-row justify-between mx-4 sm:mx-16 lg:mx-4 lg:h-[25%] lg:p-1   md:mx-4 md:h-[25%] md:p-1"> 
           <div class=""> 
-            <h1 class="font-title font-bold text-white text-4xl xl:mb-0.5">Madrid</h1> 
+            <h1 class="font-title font-bold text-white text-4xl lg:mb-0.5   md:mb-0.5">Madrid</h1> 
             <p class="font-body text-slate-400 mb-6">Chance of rain : 0%</p> 
             <p class="font-body font-bold text-white text-4xl">31°</p> 
           </div> 
@@ -46,40 +46,40 @@
             <i class="fa-solid fa-sun text-yellow-400 text-9xl"></i> 
           </div>
         </div>
-        <div class="bg-gray-700 flex flex-col gap-5 h-[25%] border rounded-2xl mx-2 xl:mx-0">
+        <div class="bg-gray-700 flex flex-col gap-5 h-[25%] border rounded-2xl mx-2 lg:mx-0 md:mx-0">
           <div class="h-[10%] m-2">
             <h2 class="font-title text-slate-400">TODAY'S FORECAST</h2> 
           </div>
-          <div class="flex flex-row justify-between h-[80%] gap-1.5 px-1.5 xl:justify-evenly xl:gap-0 xl:px-0">
-            <div class="font-body flex flex-col justify-evenly border-r border-slate-800 pr-2 gap-1 xl:pr-3 xl:gap-0"> 
-              <h3 class=" text-slate-400 text-sm xl:text-base">6:00 AM</h3> 
-              <i class="fa-solid fa-cloud text-gray-300 text-lg xl:text-2xl"></i> 
-              <p class="text-white font-bold text-sm xl:text-base">25°</p> 
+          <div class="flex flex-row justify-between h-[80%] gap-1.5 px-1.5 lg:justify-evenly lg:gap-0 lg:px-0   md:gap-0 md:px-0">
+            <div class="font-body flex flex-col justify-evenly border-r border-slate-800 pr-2 gap-1    sm:pr-6 lg:pr-3 lg:gap-0  md:pr-2 md:gap-0"> 
+              <h3 class=" text-slate-400 text-sm sm:texte-base  md:text-sm lg:text-base">6:00 AM</h3> 
+              <i class="fa-solid fa-cloud text-gray-300 text-lg lg:text-2xl"></i> 
+              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">25°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1 xl:pr-3 xl:gap-0"> 
-                <h3 class=" text-slate-400 text-sm xl:text-base">9:00 AM</h3> 
-                <i class="fa-solid fa-cloud-sun text-yellow-400 text-lg xl:text-2xl"></i> 
-                <p class="text-white font-bold text-sm xl:text-base">28°</p> 
+            <div class="font-body flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1    sm:pr-8 lg:pr-3 lg:gap-0  md:pr-2 md:gap-0"> 
+                <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">9:00 AM</h3> 
+                <i class="fa-solid fa-cloud-sun text-yellow-400 text-lg lg:text-2xl"></i> 
+                <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">28°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1 xl:pr-3 xl:gap-0"> 
-              <h3 class="w text-slate-400 text-sm xl:text-base">12:00 PM</h3> 
-              <i class="fa-solid fa-sun text-yellow-400 text-lg xl:text-2xl"></i> 
-              <p class="text-white font-bold text-sm xl:text-base">33°</p> 
+            <div class="font-body flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1   sm:pr-8  lg:pr-3 lg:gap-0 md:pr-2 md:gap-0"> 
+              <h3 class="text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">12:00 PM</h3> 
+              <i class="fa-solid fa-sun text-yellow-400 text-lg lg:text-2xl"></i> 
+              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">33°</p> 
             </div> 
-            <div class="font-bod flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1 xl:pr-3 xl:gap-0"> 
-              <h3 class=" text-slate-400 text-sm xl:text-base">3:00 PM</h3> 
-              <i class="fa-solid fa-sun text-yellow-400 text-lg xl:text-2xl"></i> 
-              <p class="text-white font-bold text-sm xl:text-base">34°</p> 
+            <div class="font-bod flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1   sm:pr-8  lg:pr-3 lg:gap-0 md:pr-2 md:gap-0"> 
+              <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">3:00 PM</h3> 
+              <i class="fa-solid fa-sun text-yellow-400 text-lg lg:text-2xl"></i> 
+              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">34°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1 xl:pr-3 xl:gap-0"> 
-              <h3 class=" text-slate-400 text-sm xl:text-base">6:00 PM</h3> 
-              <i class="fa-solid fa-sun text-yellow-400 text-lg xl:text-2xl"></i> 
-              <p class="text-white font-bold text-sm xl:text-base">32°</p> 
+            <div class="font-body flex flex-col justify-evenly  border-r border-slate-800 pr-2 gap-1    sm:pr-8  lg:pr-3 lg:gap-0 md:pr-2  md:gap-0"> 
+              <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">6:00 PM</h3> 
+              <i class="fa-solid fa-sun text-yellow-400 text-lg lg:text-2xl"></i> 
+              <p class="text-white font-bold  sm:texte-base md:text-sm text-sm lg:text-base">32°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly gap-1 xl:gap-0"> 
-              <h3 class=" text-slate-400 text-sm xl:text-base">9:00 PM</h3> 
-              <i class="fa-solid fa-cloud-sun  text-yellow-400 text-lg xl:text-2xl"></i> 
-              <p class="text-white font-bold text-sm xl:text-base">30°</p> 
+            <div class="font-body flex flex-col justify-evenly gap-1 lg:gap-0   md:gap-0"> 
+              <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">9:00 PM</h3> 
+              <i class="fa-solid fa-cloud-sun  text-yellow-400 text-lg lg:text-2xl"></i> 
+              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">30°</p> 
             </div> 
           </div>
         </div>
@@ -87,10 +87,10 @@
         <div class="bg-gray-700 flex flex-col h-[25%] rounded-2xl mx-2"> 
           <div class="flex flex-row justify-between m-2"> 
             <h2 class="font-title text-slate-400">AIR CONDITIONS</h2> 
-            <button class="font-body bg-blue-500 hover:bg-blue-700  text-white border border-gray-500 w-25 p-1 rounded-2xl">See more</button> 
+            <button class="font-body bg-blue-500 hover:bg-blue-700  text-white border border-gray-500 w-25 p-1 rounded-2xl  sm:bg-green-700   md:bg-red-700 lg:bg-yellow-400">See more</button> 
           </div>
-          <div class="flex flex-row gap-32 text-sm xl:text-base xl:gap-64"> 
-            <div class="ml-7">  
+          <div class="flex flex-row gap-32 text-sm sm:gap-64 md:gap-24 lg:text-base lg:gap-48"> 
+            <div class="ml-7  sm:ml-10 lg:ml-10">  
               <div class="font-body"> 
                 <h3 class="text-slate-400"><i class="fa-solid fa-temperature-three-quarters"></i> Real feel</h3> 
                 <p class="text-white font-bold ml-5">30°</p> 
@@ -103,7 +103,7 @@
             <div> 
               <div class="font-body"> 
                 <h3 class="text-slate-400"><i class="fa-solid fa-wind"></i> Wind</h3> 
-                <p class="text-white font-bold ml-6 xl:ml-8">0.2 Km/h</p> 
+                <p class="text-white font-bold ml-6 lg:ml-8    md:ml-8">0.2 Km/h</p> 
               </div> 
               <div class="font-body"> 
                 <h3 class="text-slate-400"><i class="fa-solid fa-sun"></i> UV index</h3> 
@@ -114,7 +114,7 @@
         </div>
       </section>
       <!--DAY FORECAST--> 
-      <section class="bg-gray-700 flex flex-col w-[90%] mb-2 ml-5 px-5 pb-1 rounded-2xl xl:w-[35%] xl:mt-20 xl:pl-5 xl:pr-2">  
+      <section class="bg-gray-700 flex flex-col w-[90%] mb-2 ml-5 px-5 pb-1 rounded-2xl lg:w-[35%] lg:mt-20 lg:pl-5 lg:pr-2   md:w-[35%] md:mt-20 md:pl-5 md:pr-2">  
         <h2 class="font-title text-slate-400 m-4">7-DAY FORECAST</h2>
         <div class="flex flex-col gap-5">
           <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 

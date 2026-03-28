@@ -4,7 +4,6 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-xl: 1272px;
   --font-title: "Merriweather", serif;
   --font-body: "Inter", sans-serif;
   --font-button: "Montserrat", sans-serif;
