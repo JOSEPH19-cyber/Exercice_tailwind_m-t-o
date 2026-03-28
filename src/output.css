@@ -284,6 +284,9 @@
   .h-\[80\%\] {
     height: 80%;
   }
+  .h-auto {
+    height: auto;
+  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
