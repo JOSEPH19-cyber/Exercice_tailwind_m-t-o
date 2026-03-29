@@ -7,157 +7,158 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> 
   </head> 
   
-  <body class="bg-gray-900 flex flex-col w-full lg:flex-row lg:h-screen lg:gap-[2rem]         md:flex-row md:gap-[2rem]"> 
-    <aside class="bg-gray-700 flex flex-row justify-between my-5 mx-2 p-2 rounded-2xl lg:flex-col lg:justify-start lg:gap-8 lg:w-[9%] lg:m-7 lg:p-[1.2rem]       md:flex-col md:justify-start md:gap-8 md:w-[12%] md:m-7 md:p-[1.2rem]"> 
+  <body class="bg-main flex flex-col w-full lg:h-screen md:flex-row md:gap-[2rem]"> 
+    <aside class="bg-card flex flex-row justify-between my-5 mx-2 p-2 rounded-2xl lg:w-[9%] md:flex-col md:justify-start md:gap-8 md:w-[12%] md:m-7 md:p-[1.2rem]"> 
       <div> 
-        <img src="./image/wind.jpg" alt="wind" class="w-[3rem] h-[3rem]  rounded-[20%] lg:w-[2rem] lg:h-[2rem]    md:w-[2rem] md:h-[2rem]"> 
+        <img src="./image/wind.jpg" alt="wind" class="w-[3rem] h-[3rem]  rounded-[20%] md:w-[2rem] md:h-[2rem]"> 
       </div> 
-      <div class="font-body flex flex-row gap-6 sm:gap-16 lg:flex-col lg:gap-2   md:flex-col md:gap-2"> 
+      <div class="font-body flex flex-row gap-6 sm:gap-16 md:flex-col md:gap-2"> 
         <div class="text-[1rem]"> 
-          <i class="fa-solid fa-cloud-sun text-white"></i> 
-          <p class="text-white">Weather</p> 
+          <i class="fa-solid fa-cloud-sun text-primary"></i> 
+          <p class="text-primary">Weather</p> 
         </div> 
         <div class="font-body"> 
-          <i class="fa-solid fa-city text-slate-400"></i> 
-          <p class="text-slate-400">Cities</p> 
+          <i class="fa-solid fa-city text-secondary"></i> 
+          <p class="text-secondary">Cities</p> 
         </div> 
         <div class="font-body"> 
           <i class="fa-solid fa-map text-slate-400"></i> 
-          <p class="text-slate-400">Map</p> 
+          <p class="text-secondary">Map</p> 
         </div> 
         <div class="font-body"> 
           <i class="fa-solid fa-gear text-slate-400"></i> 
-          <p class="text-slate-400">Settings</p> 
+          <p class="text-secondary">Settings</p> 
         </div> 
       </div> 
     </aside> 
     
     <!--Main--> 
-    <main class="flex flex-col gap-8 lg:flex-row lg:w-[85%] lg:gap-0    md:flex-row md:w-[85%] md:gap-0"> 
-      <section class="flex flex-col gap-8 lg:gap-5 lg:w-[60%] lg:h-full    md:gap-5 md:w-[60%] md:h-full">
-        <input type="text" id="recherche" placeholder="search for cities" class="bg-gray-700 text-slate-100 rounded-2xl w-[80%] h-10 mx-[10%] pl-2 lg:mt-7 lg:rounded-lg lg:h-[8%] lg:mx-0 lg:w-full    md:mt-7 md:rounded-lg md:h-[8%] md:mx-0 md:w-full">
-        <div class="flex flex-row justify-between mx-4 sm:mx-16 lg:mx-4 lg:h-[25%] lg:p-1   md:mx-4 md:h-[25%] md:p-1"> 
+    <main class="flex flex-col gap-8 md:flex-row md:w-[85%] md:gap-0"> 
+      <section class="flex flex-col gap-8 md:gap-5 md:w-[60%] md:h-full">
+        <input type="text" id="recherche" placeholder="search for cities" class="bg-card text-tertiary rounded-2xl w-[80%] h-10 mx-[10%] pl-2 md:mt-7 md:rounded-lg md:h-[8%] md:mx-0 md:w-full">
+        <div class="flex flex-row justify-between mx-4 sm:mx-16 md:mx-4 md:h-[25%] md:p-1"> 
           <div class=""> 
-            <h1 class="font-title font-bold text-white text-4xl lg:mb-0.5   md:mb-0.5">Madrid</h1> 
-            <p class="font-body text-slate-400 mb-6">Chance of rain : 0%</p> 
-            <p class="font-body font-bold text-white text-4xl">31°</p> 
+            <h1 class="font-title font-bold text-primary text-4xl md:mb-0.5">Madrid</h1> 
+            <p class="font-body text-secondary mb-6">Chance of rain : 0%</p> 
+            <p class="font-body font-bold text-primary text-4xl">31°</p> 
           </div> 
           <div class="w-16 mr-16"> 
-            <i class="fa-solid fa-sun text-yellow-400 text-9xl"></i> 
+            <i class="fa-solid fa-sun text-yellow text-9xl"></i> 
           </div>
         </div>
-        <div class="bg-gray-700 flex flex-col gap-5 h-auto border rounded-2xl mx-2 lg:mx-0 md:mx-0">
+        <!-- TODAY'S FORECAST -->   
+        <div class="bg-card flex flex-col gap-5 h-auto border rounded-2xl mx-2 md:mx-0">
           <div class="h-[10%] m-2">
-            <h2 class="font-title text-slate-400">TODAY'S FORECAST</h2> 
+            <h2 class="font-title text-secondary">TODAY'S FORECAST</h2> 
           </div>
-          <div class="flex flex-row justify-between h-[80%] gap-1.5 px-1.5 lg:justify-evenly lg:gap-0 lg:px-0   md:gap-0 md:px-0">
-            <div class="font-body flex flex-col justify-evenly  pr-2 gap-1    sm:pr-6 lg:pr-3 lg:gap-0  md:pr-2 md:gap-0"> 
-              <h3 class=" text-slate-400 text-sm sm:texte-base  md:text-sm lg:text-base">6:00 AM</h3> 
-              <i class="fa-solid fa-cloud text-gray-300 text-lg lg:text-2xl"></i> 
-              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">25°</p> 
+          <div class="flex flex-row justify-between h-[80%] gap-1.5 px-1.5 lg:justify-evenly md:gap-0 md:px-0">
+            <div class="weather-col"> 
+              <h3 class="weather-time">6:00 AM</h3> 
+              <i class="fa-solid fa-cloud text-icon-muted weather-icon"></i> 
+              <p class="weather-temp">25°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly  pr-2 gap-1    sm:pr-8 lg:pr-3 lg:gap-0  md:pr-2 md:gap-0"> 
-                <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">9:00 AM</h3> 
-                <i class="fa-solid fa-cloud-sun text-yellow-400 text-lg lg:text-2xl"></i> 
-                <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">28°</p> 
+            <div class="weather-col"> 
+                <h3 class="weather-time">9:00 AM</h3> 
+                <i class="fa-solid fa-cloud-sun text-yellow weather-icon"></i> 
+                <p class="weather-temp">28°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly pr-2 gap-1   sm:pr-8  lg:pr-3 lg:gap-0 md:pr-2 md:gap-0"> 
-              <h3 class="text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">12:00 PM</h3> 
-              <i class="fa-solid fa-sun text-yellow-400 text-lg lg:text-2xl"></i> 
-              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">33°</p> 
+            <div class="weather-col"> 
+              <h3 class="weather-time">12:00 PM</h3> 
+              <i class="fa-solid fa-sun text-yellow weather-icon"></i> 
+              <p class="weather-temp">33°</p> 
             </div> 
-            <div class="font-bod flex flex-col justify-evenly  pr-2 gap-1   sm:pr-8  lg:pr-3 lg:gap-0 md:pr-2 md:gap-0"> 
-              <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">3:00 PM</h3> 
-              <i class="fa-solid fa-sun text-yellow-400 text-lg lg:text-2xl"></i> 
-              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">34°</p> 
+            <div class="weather-col"> 
+              <h3 class=" weather-time">3:00 PM</h3> 
+              <i class="fa-solid fa-sun text-yellow weather-icon"></i> 
+              <p class="weather-temp">34°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly pr-2 gap-1    sm:pr-8  lg:pr-3 lg:gap-0 md:pr-2  md:gap-0"> 
-              <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">6:00 PM</h3> 
-              <i class="fa-solid fa-sun text-yellow-400 text-lg lg:text-2xl"></i> 
-              <p class="text-white font-bold  sm:texte-base md:text-sm text-sm lg:text-base">32°</p> 
+            <div class="weather-col"> 
+              <h3 class="weather-time">6:00 PM</h3> 
+              <i class="fa-solid fa-sun text-yellow weather-icon"></i> 
+              <p class="weather-temp">32°</p> 
             </div> 
-            <div class="font-body flex flex-col justify-evenly gap-1 lg:gap-0   md:gap-0"> 
-              <h3 class=" text-slate-400 text-sm  sm:texte-base md:text-sm lg:text-base">9:00 PM</h3> 
-              <i class="fa-solid fa-cloud-sun  text-yellow-400 text-lg lg:text-2xl"></i> 
-              <p class="text-white font-bold text-sm  sm:texte-base md:text-sm lg:text-base">30°</p> 
+            <div class="font-body flex flex-col justify-evenly gap-1 md:gap-0"> 
+              <h3 class="weather-time">9:00 PM</h3> 
+              <i class="fa-solid fa-cloud-sun  text-yellow weather-icon"></i> 
+              <p class="weather-temp">30°</p> 
             </div> 
           </div>
         </div>
         <!-- AIR CONDITIONS -->   
         <div class="bg-gray-700 flex flex-col h-auto rounded-2xl mx-2"> 
           <div class="flex flex-row justify-between m-2"> 
-            <h2 class="font-title text-slate-400">AIR CONDITIONS</h2> 
-            <button class="font-body bg-blue-500 hover:bg-blue-700  text-white border border-gray-500 w-25 p-1 rounded-2xl  sm:bg-green-700   md:bg-red-700 lg:bg-yellow-400">See more</button> 
+            <h2 class="font-title text-secondary">AIR CONDITIONS</h2> 
+            <button class="font-body bg-blue hover:bg-blue-dark  text-white border border-gray-500 w-25 p-1 rounded-2xl">See more</button> 
           </div>
           <div class="flex flex-row gap-32 text-sm sm:gap-64 md:gap-24 lg:text-base lg:gap-48"> 
-            <div class="ml-7  sm:ml-10 lg:ml-10">  
+            <div class="ml-7  sm:ml-10">  
               <div class="font-body"> 
-                <h3 class="text-slate-400"><i class="fa-solid fa-temperature-three-quarters"></i> Real feel</h3> 
-                <p class="text-white font-bold ml-5">30°</p> 
+                <h3 class="text-secondary"><i class="fa-solid fa-temperature-three-quarters"></i> Real feel</h3> 
+                <p class="weather-value">30°</p> 
               </div> 
               <div class="font-body"> 
-                <h3 class="text-slate-400"><i class="fa-solid fa-droplet"></i> Chance of rain</h3> 
-                <p class="text-white font-bold ml-5">0%</p> 
+                <h3 class="text-secondary"><i class="fa-solid fa-droplet"></i> Chance of rain</h3> 
+                <p class="weather-value">0%</p> 
               </div> 
             </div> 
             <div> 
               <div class="font-body"> 
-                <h3 class="text-slate-400"><i class="fa-solid fa-wind"></i> Wind</h3> 
-                <p class="text-white font-bold ml-6 lg:ml-8    md:ml-8">0.2 Km/h</p> 
+                <h3 class="text-secondary"><i class="fa-solid fa-wind"></i> Wind</h3> 
+                <p class="text-primary font-bold ml-6 md:ml-8">0.2 Km/h</p> 
               </div> 
               <div class="font-body"> 
-                <h3 class="text-slate-400"><i class="fa-solid fa-sun"></i> UV index</h3> 
-                <p class="text-white font-bold ml-5">3</p> 
+                <h3 class="text-secondary"><i class="fa-solid fa-sun"></i>UV index</h3> 
+                <p class="weather-value">3</p> 
               </div> 
             </div>
           </div>
         </div>
       </section>
       <!--DAY FORECAST--> 
-      <section class="bg-gray-700 flex flex-col w-auto mb-2 ml-5 px-5 pb-1 rounded-2xl h-auto lg:mt-20 lg:pl-5 lg:pr-2   md:w-[35%] md:mt-20 md:pl-5 md:pr-2">  
-        <h2 class="font-title text-slate-400 m-4">7-DAY FORECAST</h2>
+      <section class="bg-card flex flex-col w-auto mb-2 ml-5 px-5 pb-1 mr-5 rounded-2xl h-auto md:w-[35%] md:mt-20 md:pl-5 md:pr-2">  
+        <h2 class="font-title text-secondary m-4">7-DAY FORECAST</h2>
         <div class="flex flex-col gap-5">
-          <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 
-            <p class="text-slate-400">Tod</p> 
-            <i class="fa-solid fa-sun text-yellow-400 text-2xl md:text-lg lg:text-2xl"></i> 
-            <p class="text-white md:text-sm lg:text-base">Sunny</p> 
-            <p class="text-white  md:text-sm lg:text-base">36/22</p> 
+          <div class="weather-row"> 
+            <p class="text-secondary">Tod</p> 
+            <i class="fa-solid fa-sun text-yellow forecast-icon"></i> 
+            <p class="weather-text">Sunny</p> 
+            <p class="weather-text">36/22</p> 
           </div> 
-          <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 
-            <p class="text-slate-400">Tue</p> 
-            <i class="fa-solid fa-sun text-yellow-400 text-2xl md:text-lg lg:text-2xl"></i> 
-            <p class="text-white md:text-sm lg:text-base">Sunny</p> 
-            <p class="text-white md:text-sm lg:text-base">37/21</p> 
+          <div class="weather-row"> 
+            <p class="text-secondary">Tue</p> 
+            <i class="fa-solid fa-sun text-yellow forecast-icon"></i> 
+            <p class="weather-text">Sunny</p> 
+            <p class="weather-text">37/21</p> 
           </div> 
-          <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 
-            <p class="text-slate-400">Wed</p> 
-            <i class="fa-solid fa-sun text-yellow-400 text-2xl md:text-lg lg:text-2xl"></i> 
-            <p class="text-white  md:text-sm lg:text-base">Sunny</p> 
-            <p class="text-white  md:text-sm lg:text-base">37/21</p> 
+          <div class="weather-row"> 
+            <p class="text-secondary">Wed</p> 
+            <i class="fa-solid fa-sun text-yellow forecast-icon"></i> 
+            <p class="weather-text">Sunny</p> 
+            <p class="weather-text">37/21</p> 
           </div> 
-          <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 
-            <p class="text-slate-400">Thu</p> 
-            <i class="fa-solid fa-cloud text-gray-300 text-2xl  md:text-lg lg:text-2xl"></i> 
-            <p class="text-white   md:text-sm lg:text-base">Cloudy</p> 
-            <p class="text-white   md:text-sm lg:text-base">37/21</p> 
+          <div class="weather-row"> 
+            <p class="text-secondary">Thu</p> 
+            <i class="fa-solid fa-cloud text-icon-muted forecast-icon"></i> 
+            <p class="weather-text">Cloudy</p> 
+            <p class="weather-text">37/21</p> 
           </div> 
-          <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 
-            <p class="text-slate-400">Fri</p> 
-            <i class="fa-solid fa-cloud text-gray-300 text-2xl  md:text-lg lg:text-2xl"></i> 
-            <p class="text-white  md:text-sm lg:text-base">Cloudy</p> 
-            <p class="text-white  md:text-sm lg:text-base">37/21</p> 
+          <div class="weather-row"> 
+            <p class="text-secondary">Fri</p> 
+            <i class="fa-solid fa-cloud text-icon-muted forecast-icon"></i> 
+            <p class="weather-text">Cloudy</p> 
+            <p class="weather-text">37/21</p> 
           </div> 
-          <div class="flex flex-row justify-between gap-1 border-b border-slate-800 pb-5"> 
-            <p class="text-slate-400">Sat</p> 
-            <i class="fa-solid fa-cloud-rain text-gray-300 text-2xl  md:text-lg lg:text-2xl"></i> 
-            <p class="text-white  md:text-sm lg:text-base">Rainy</p> 
-            <p class="text-white  md:text-sm lg:text-base">37/21</p> 
+          <div class="weather-row"> 
+            <p class="text-secondary">Sat</p> 
+            <i class="fa-solid fa-cloud-rain text-icon-muted forecast-icon"></i> 
+            <p class="weather-text">Rainy</p> 
+            <p class="weather-text">37/21</p> 
           </div> 
           <div class="flex flex-row justify-between gap-1"> 
-            <p class="text-slate-400">Sun</p> 
-            <i class="fa-solid fa-bolt  text-yellow-400 text-2xl md:text-lg lg:text-2xl"></i> 
-            <p class="text-white  md:text-sm lg:text-base">Storm</p> 
-            <p class="text-white  md:text-sm lg:text-base">37/21</p> 
+            <p class="text-secondary">Sun</p> 
+            <i class="fa-solid fa-bolt  text-yellow forecast-icon"></i> 
+            <p class="weather-text">Storm</p> 
+            <p class="weather-text">37/21</p> 
           </div>
         </div>  
       </section>

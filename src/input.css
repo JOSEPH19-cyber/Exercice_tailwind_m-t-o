@@ -4,7 +4,75 @@
 @import "tailwindcss";
 
 @theme {
+
+  /*---------------------------------------
+    Les polices d'écritures
+  -----------------------------------------*/
   --font-title: "Merriweather", serif;
   --font-body: "Inter", sans-serif;
   --font-button: "Montserrat", sans-serif;
+
+   /*---------------------------------------
+    Les couleurs
+  -----------------------------------------*/
+  --color-main: #111827;       
+  --color-card: #374151;       
+  --color-primary: #ffffff;  
+  --color-secondary: #94a3b8;
+  --color-tertiary: #f1f5f9; 
+  --color-icon-muted: #d1d5db;    
+  --color-gray-dark: #1e293b;  
+  --color-blue: #3b82f6;          
+  --color-blue-dark: #1d4ed8;     
+  --color-yellow: #facc15;
+
+}
+
+/*---------------------------------------
+    Les composants personnalisés
+  -----------------------------------------*/
+@layer components{
+
+  /*---------------------------------------
+    Style today's forecast
+  -----------------------------------------*/
+  .weather-col{
+    @apply font-body flex flex-col justify-evenly pr-2 gap-1 sm:pr-8 lg:pr-3 md:pr-2 md:gap-0;
+  }
+
+  .weather-time {
+    @apply text-secondary text-sm sm:text-base md:text-sm lg:text-base;
+  }
+
+  .weather-icon {
+    @apply text-lg lg:text-2xl;
+  }
+
+   .weather-temp {
+    @apply text-primary font-bold text-sm sm:text-base md:text-sm lg:text-base;
+  }
+
+  /*---------------------------------------
+    Style air conditions
+  -----------------------------------------*/
+  .weather-value {
+    @apply text-primary font-bold ml-5;
+  }
+
+  /*---------------------------------------
+    Style day forecast
+  -----------------------------------------*/
+  .weather-row {
+    @apply flex flex-row justify-between gap-1 border-b border-gray-dark pb-5;
+  }
+
+  .forecast-icon {
+    @apply text-2xl md:text-lg lg:text-2xl;
+  }
+
+  .weather-text {
+    @apply text-primary md:text-sm lg:text-base;
+  }
+
+
 }
